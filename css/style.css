@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-6{
+    width: 50%;
+    padding: 0 15px;
+}
+.header{
+    padding: 32px 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-menu{
+    display: flex;
+    align-items: center;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu svg{
+    fill: #247CC0;
+}
+.top-menu li{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #030D15;
+}
+.top-menu li:not(:last-child){
+    margin-right: 40px;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bx{
+    font-size: 20px;
+}
+.top-bar-item{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s;
+}
+.top-bar-item .bx-cart span{
+    font-family: 'Hind Siliguri', sans-serif;
+    position: absolute;
+    top: 7px;
+    right: 3px;
+    font-size: 10px;
+    line-height: 16px;
+    color: #FFFFFF;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #C72535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-bar-item:not(:last-child){
+    margin-right: 30px;
+}
+.top-bar-item:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #F4F9FC;
+}
+.hero{
+    padding: 54px 0;
+}
+/*.hero-box{*/
+/*    margin-right: 28px;*/
+/*}*/
+.hero-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #C72535;
+    opacity: 0.6;
+    margin-top: 75px;
+}
+.hero-heading{
+    font-weight: 500;
+    font-size: 61px;
+    line-height: 73px;
+    color: #030D15;
+    margin: 3px 0 29px;
+}
+.hero-heading span{
+    font-weight: 600;
+    color: #247CC0;
+    position: relative;
+}
+.hero-heading span:before{
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -10px;
+    width: 484px;
+    height: 73px;
+    background: #247CC0;
+    opacity: 0.1;
+}
+.hero-desc{
+    font-size: 20px;
+    line-height: 27px;
+    color: #030D15;
+    opacity: 0.6;
+}
+.shop-now{
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+.btn{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #247CC0;
+    display: inline-block;
+    padding: 16px 35px;
+}
+.new-price{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #030D15;
+    margin-left: 31px;
+}
+.old-price{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration: line-through;
+    color: #030D15;
+    opacity: 0.5;
+    margin-left: 18px;
+}
+.hero .col-6 img{
+    max-width: 115%;
+}
+.hero-logotypes{
+    margin: -7px 0 110px;
+    padding: 76px 118px;
+    background: #FFFFFF;
+    box-shadow: 0 100px 80px rgba(174, 174, 174, 0.08), 0 43.751px 36.4414px rgba(174, 174, 174, 0.0575083), 0 19.8401px 19.1406px rgba(174, 174, 174, 0.0476886), 0 6.77214px 9.61331px rgba(174, 174, 174, 0.04), 0 0.190079px 4.14347px rgba(174, 174, 174, 0.0323114), 0 -1.73968px 1.20532px rgba(174, 174, 174, 0.0224916);
+    display: flex;
+    justify-content: space-between;
+}
+.hero-logotypes img:not(:last-child){
+    margin-right: 84px;
+}
+.recent-products{
+    padding: 22px 0 50px;
+}
+.recent-box-img{
+    position: relative;
+}
+.recent-box-img i{
+    position: absolute;
+    top: -18px;
+    right: -19px;
+    width: 38px;
+    height: 38px;
+    border: 3px solid #f3f3f3;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recent-box-title{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    color: #030D15;
+}
+.recent-box-desc{
+    font-size: 14px;
+    line-height: 21px;
+    color: #030D15;
+    opacity: 0.6;
+    margin: 9px 0 20px;
+}
+.recent-box-info{
+    padding: 29px 0 31px;
+}
+.recent-box-info .new-price{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #030D15;
+    margin-left: 0;
+}
+.reviews{
+    margin-top: 15px;
+}
+.recent-box-info .old-price{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 27px;
+    text-decoration-line: line-through;
+    color: #030D15;
+    opacity: 0.5;
+}
+.bxs-star:not(:last-child){
+    color: #C72535;
+}
+.bx:nth-child(5){
+    color: #E6EDF2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
